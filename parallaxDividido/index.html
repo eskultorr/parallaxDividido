@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Animatedscroll</title>
+</head>
+<body>
+    <div class="w-full h-screen flex justify-center bg-black text-white">
+        <div class="container mx-auto p-8 flex flex-col justify-center items-center">
+            <h1 class="text-5xl text-center font-semibold mb-12">the best rock in madrid is on <span>bustock</span></h1>
+            <p>Situado en la mitica calle de huertas de madrid, <span>bustock</span> ofrece un ambiente agradable con el mejor rock,
+                y recondando esa atmosfera del Madrid de los 90 la movida madrileña en las puertas de Rock-Ola.
+            </p>
+        </div>
+    </div>
+    <div class="w-full h-screen overflow-hidden flex" id="verticalContainer">
+        <div class="w-1/2 h-[400vh] left-section">
+            <div class="w-full h-screen bg-orange-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/bonkjovi.jpg" alt="Bon Jovi" name= "bonjovi" class="w-full h-full" >
+            </div>
+            <div class="w-full h-screen bg-fuchsia-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/kiss.jpg" alt="kiss" name= "kiss" class="w-full h-full" >
+            </div>
+            <div class="w-full h-screen bg-teal-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/lokillo.jpg" alt="loquillo" name= "loquillo" class="w-full h-full" >
+            </div>
+            <div class="w-full h-screen bg-indigo-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/adcd.jpg" alt="acdc" name= "acdc" class="w-full h-full" >
+            </div>
+        </div>
+        <div class="w-1/2 h-[400vh] right-section">
+            <div class="w-full h-screen bg-pink-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/janis.jpg" alt="janis" name= "janis" class="w-full h-full" >
+            </div>
+            <div class="w-full h-screen bg-orange-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/jimy.jpg" alt="jimy" name= "jimy" class="w-full h-full" >
+            </div>
+            <div class="w-full h-screen bg-red-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/mclan.jpg" alt="mclan" name= "mclan" class="w-full h-full" >
+            </div>
+            <div class="w-full h-screen bg-yellow-700 flex items-center justify-center text-6xl font-semibold">
+                <img src="./src/images/guns.jpg" alt="guns" name= "guns" class="w-full h-full">
+            </div>
+        </div>
+    </div>
+    <section class="w-full h-screen flex justify-center items-center bg-black text-white px-4 py-2">
+        <p>calle huertas 25 madrid<br> <span>bustock  !!!</span></p>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src="./src/app.js"></script>
+</body>
+</html>
